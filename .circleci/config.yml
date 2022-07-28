@@ -40,7 +40,7 @@ jobs:
           command: |
             ./gradlew assembleRelease
 
-       - store_test_results:
+      - store_test_results:
           path: ~/test-results
 
 # Invoke jobs via workflows
