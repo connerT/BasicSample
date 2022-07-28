@@ -40,6 +40,10 @@ jobs:
           command: |
             ./gradlew assembleRelease
 
+      - store_artifacts:
+          path: ~/test-results.pb
+          destination: /test-results
+
       - store_test_results:
           path: ~/test-result.pb
 
